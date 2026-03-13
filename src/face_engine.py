@@ -13,18 +13,19 @@ import os
 #     img = cv2.imread(pic)
 #     imgs.append(img)
     
-obama_image = face_recognition.load_image_file("shahman2.jpeg")
-obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
+# Load known individuals
+shahman_image = face_recognition.load_image_file("data/known/shahman.jpeg")
+shahman_face_encoding = face_recognition.face_encodings(shahman_image)[0]
     
 
-# Load a second sample picture and learn how to recognize it.
-biden_image = face_recognition.load_image_file("ali.jpeg")
-biden_face_encoding = face_recognition.face_encodings(biden_image)[0]
+# Load another known individual
+ali_image = face_recognition.load_image_file("data/known/ali.jpeg")
+ali_face_encoding = face_recognition.face_encodings(ali_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    obama_face_encoding,
-    biden_face_encoding
+    shahman_face_encoding,
+    ali_face_encoding
 ]
 known_face_names = [
     "Shahman Butt",
@@ -32,7 +33,8 @@ known_face_names = [
 ]
 
 # Load an image with an unknown face
-unknown_image = face_recognition.load_image_file("aligroup.jpeg")
+# Load an image with unknown faces for testing
+unknown_image = face_recognition.load_image_file("data/testing/aligroup.jpeg")
 
 # Find all the faces and face encodings in the unknown image
 face_locations = face_recognition.face_locations(unknown_image)
