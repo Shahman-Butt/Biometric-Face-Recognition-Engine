@@ -1,7 +1,6 @@
 # Biometric Face Recognition Engine
 ### Advanced Computer Vision & Facial Identity Verification
 
-![Sample Output](assets/sample_output.jpg)
 
 ## 📌 Project Overview
 The **Biometric Face Recognition Engine** is a high-performance Python application designed to detect, identify, and localize human faces within complex imagery. Utilizing State-of-the-Art (SOTA) deep learning models, the system generates 128-dimensional facial embeddings to achieve high accuracy in identity verification, even in group settings.
@@ -107,7 +106,7 @@ PersonRecognizer/
 
 ## 👥 Author Information
 *   **Shahman Butt** - [GitHub](https://github.com/Shahman-Butt) | [LinkedIn](https://www.linkedin.com/in/shahman-butt/)
-*   **Ali Farasat** - Project Collaborator
+
 
 ---
 *Created for the CSI Professional Documentation Initiative.*
